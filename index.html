@@ -47,7 +47,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
@@ -82,7 +82,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-12 flex-grow">
 
         <!-- Page 1: Home / About Me -->
         <section id="home" class="page active">
@@ -124,7 +124,7 @@
                     <div class="abstract text-gray-600 leading-relaxed">In markets with asymmetric information, quality certification is intended to reduce uncertainty. But what happens when firms can strategically manipulate the signal? This paper studies the full lifecycle of a quality signal, from its strategic creation by institutions to its ultimate effect on student choice. We first document that universities in Chile engage in "window dressing" before seeking accreditation, as they improve malleable, evaluated metrics like on-time graduation rates rather than making deep, structural investments. Using administrative data and exploiting staggered accreditation decisions in a difference-in-differences framework, we then test how students respond to this potentially gamed signal. Despite the institutional gaming, students react strongly. First-time accreditation increases applications by 10.2% and enrollment by 7.3%, attracting academically stronger students and improving student-program match. Remarkably, these effects are equitable, appearing just as strong for students from low-income backgrounds. The power of the signal, however, is context-dependent, amplified by institutional reputation and weakened under mandatory regimes. These results provide a more complete view of disclosure markets and offer lessons for the design of effective quality assurance policies.</div>
                 </div>
             </div>
-            <h3 class="text-2xl font-semibold text-gray-800 mt-12 mb-6">Working Papers</h3>
+            <h3 class="text-2xl font-semibold text-gray-800 mt-12 mb-6">Work in Progress</h3>
             <div class="space-y-8">
                 <div class="p-6 bg-white rounded-lg shadow-md"><h4 class="text-xl font-semibold text-gray-900">School Starting Age and the College Application Margin: Evidence from Chile</h4></div>
                 <div class="p-6 bg-white rounded-lg shadow-md"><h4 class="text-xl font-semibold text-gray-900">Grading the Graders: Competition and Quality Inflation in Certification Markets</h4></div>
@@ -137,10 +137,8 @@
 
             <div class="mb-12 bg-white p-6 rounded-lg shadow-md">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Teaching Statement</h3>
-                <p class="text-gray-600 leading-relaxed mb-6">My goal as a teacher is to empower students to see economics not as a collection of abstract theories, but as a powerful toolkit for understanding the world around them. I find immense satisfaction in witnessing the moment a student connects a mathematical model to a real-life scenario, suddenly able to predict behavior or understand complex policy debates. My teaching philosophy is centered on building this bridge from theory to application, fostering the analytical skills students need to formulate their own opinions, and motivating them to move beyond critique toward finding solutions. My experience as a lecturer at the Universidad de Santiago and as a Teaching Assistant at the University of Illinois has been guided by this philosophy. This commitment has been formally recognized by my inclusion on the University of Illinois' "List of Excellent Teachers," a distinction driven by consistently high evaluation scores in which students rated my overall effectiveness as a TA at an average of 4.85 out of 5.0. This record complements my experience as a primary lecturer in Chile, where students also rated my effectiveness highly, with an average score of 6.4 out of 7.0.</p>
-                <p class="text-gray-600 leading-relaxed mb-6">I believe the most profound learning occurs when students can apply economic concepts to their own context. Especially when teaching introductory courses at the Universidad de Santiago, I saw the value in using local, tangible examples to level the diverse prior knowledge of students and ground complex theories.</p>
-                <p class="text-gray-600 leading-relaxed mb-6">To truly understand concepts like market equilibrium, students need to experience them. At the University of Illinois, I designed an in-class activity to explain the theory of long-run firm entry and exit... This simple, interactive simulation allowed students to intuitively grasp how markets naturally gravitate toward a zero-profit equilibrium in the long run.</p>
-                <p class="text-gray-600 leading-relaxed">A student's confidence is critical to their success. I believe a key part of my role is to create a supportive environment where students feel comfortable asking for help and are motivated to push past challenges. Drawing on my background in team sports, I enjoy taking on a mentoring role and make a point to identify students who are struggling and personally encourage them to visit my office hours.</p>
+                <p class="text-gray-600 mb-4">My teaching statement is available for download.</p>
+                <a href="assets/pdf/MolinaCristhian_teachingstatement.pdf" target="_blank" class="btn bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 shadow-sm">Download Teaching Statement (PDF)</a>
             </div>
 
             <div class="mb-12">
@@ -152,7 +150,7 @@
             </div>
 
             <div class="mb-12">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Instructor of Record</h3>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Lecturer</h3>
                 <div class="space-y-6">
                     <div class="p-6 bg-white rounded-lg shadow-md">
                         <h4 class="text-xl font-semibold text-gray-900">Intermediate Microeconomics</h4>
@@ -162,6 +160,11 @@
                         <h4 class="text-xl font-semibold text-gray-900">Microeconomic Principles</h4>
                         <p class="text-gray-500 mt-1">Universidad de Santiago de Chile (Spring 2018, Fall 2018, Spring 2019)</p>
                     </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">Introduction to Economics</h4>
+                        <p class="text-gray-500 mt-1">Universidad de Santiago de Chile (Spring 2018, Fall 2018, Spring 2019)</p>
+                    </div>
+
                 </div>
             </div>
             <div class="mb-12">
@@ -191,14 +194,14 @@
             <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-8">More About Me</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
                 <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
-                     <p class="text-gray-600 leading-relaxed mb-4">Outside of research and teaching, I have a variety of interests. I grew up playing soccer in Chile and continue to enjoy sports and outdoor activities. Coming from Chile, hiking is a must, and it's something that I enjoy tremendously here in Illinois as well.</p>
+                     <p class="text-gray-600 leading-relaxed mb-4">Outside of research and teaching, I have a variety of interests. I grew up playing soccer in Chile and continue to enjoy sports and outdoor activities. Coming from Chile, hiking is a must, and it's something that I enjoy tremendously while doing my PhD as well.</p>
                      <p class="text-gray-600 leading-relaxed mb-4">I'm also passionate about music—listening to new artists, sharing musical tastes, and going to concerts. I also play guitar as a hobby.</p>
                      <p class="text-gray-600 leading-relaxed">At home, I have a black cat named Inosuke.</p>
                 </div>
                 <div class="md:col-span-1">
                     <div class="bg-white p-4 rounded-lg shadow-md">
-                        <img src="assets/images/Inosuke.jpg" alt="A photo of a black cat named Inosuke" class="rounded-lg w-full h-auto object-cover">
-                        <p class="text-center text-gray-500 italic mt-2">My cat, Inosuke.</p>
+                        <img src="assets/images/IMG_20190126_173314.jpg" alt="A photo hiking at Torres del Paine, Chile." class="rounded-lg w-full h-auto object-cover">
+                        <p class="text-center text-gray-500 italic mt-2">Torres del Paine, Chile.</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +210,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-20">
+    <footer class="bg-gray-800 text-white mt-auto">
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 Cristhian Molina. All rights reserved.</p>
