@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristhian Molina - Academic Portfolio</title>
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon - You can generate your own and replace this link -->
+    <link rel="icon" href="https://illinois.edu/assets/img/branding/favicon.ico" type="image/png">
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for the active navigation link */
+        .nav-link-active {
+            color: #4f46e5; /* A nice indigo color */
+            font-weight: 500;
+        }
+        /* Simple transition for hover effects */
+        .btn, .nav-link {
+            transition: all 0.2s ease-in-out;
+        }
+        /* Style for the abstract toggle */
+        .abstract {
+            display: none;
+            margin-top: 0.75rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e5e7eb;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Your Name -->
+            <div>
+                <a href="#home" class="text-xl font-bold text-gray-900 hover:text-indigo-600">Cristhian Molina</a>
+            </div>
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="#research" class="nav-link text-gray-600 hover:text-indigo-600">Research</a>
+                <a href="#teaching" class="nav-link text-gray-600 hover:text-indigo-600">Teaching</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600">Contact</a>
+                <a href="path/to/your_cv.pdf" target="_blank" class="btn bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 shadow-sm">CV</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#home" class="block nav-link text-gray-600 hover:text-indigo-600 py-2">Home</a>
+            <a href="#research" class="block nav-link text-gray-600 hover:text-indigo-600 py-2">Research</a>
+            <a href="#teaching" class="block nav-link text-gray-600 hover:text-indigo-600 py-2">Teaching</a>
+            <a href="#contact" class="block nav-link text-gray-600 hover:text-indigo-600 py-2">Contact</a>
+            <a href="path/to/your_cv.pdf" target="_blank" class="block btn bg-indigo-500 text-white text-center mt-2 px-4 py-2 rounded-md hover:bg-indigo-600 shadow-sm">CV</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Section 1: Home / About Me -->
+        <section id="home" class="mb-24 scroll-mt-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Profile Picture -->
+                <div class="w-48 md:w-64 flex-shrink-0">
+                    <!-- IMPORTANT: Replace this placeholder with a URL to your professional photo -->
+                    <img src="https://placehold.co/400x400/e0e7ff/4f46e5?text=Your+Photo"
+                         alt="A professional headshot of Your Name"
+                         class="rounded-full shadow-lg w-full h-auto object-cover">
+                </div>
+                <!-- Bio -->
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Cristhian Molina</h1>
+                    <p class="text-xl text-indigo-700 font-medium mb-4">
+                        <!-- IMPORTANT: Replace with your title and affiliation -->
+                        Ph.D. Candidate in [Your Field] <br>
+                        [Your University]
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        <!-- IMPORTANT: Write a brief 2-3 sentence bio here. -->
+                        Welcome to my website. I am a researcher specializing in [Your Primary Research Area 1], [Area 2], and [Area 3]. My work focuses on [briefly describe your research focus or dissertation topic]. I am passionate about using [methods/theories] to understand [broader impact or question]. I will be on the 2025-2026 academic job market.
+                    </p>
+                    <!-- Social/Academic Links -->
+                    <div class="flex items-center gap-4">
+                        <a href="path/to/your_cv.pdf" target="_blank" class="btn bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 shadow-sm">Download CV</a>
+                        <a href="#contact" class="btn bg-gray-200 text-gray-800 px-5 py-2.5 rounded-lg hover:bg-gray-300">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Research -->
+        <section id="research" class="mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-8">Research</h2>
+
+            <!-- Subsection: Publications -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Publications</h3>
+            <div class="space-y-8">
+                <!-- Publication Item 1 -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-gray-900">
+                        <!-- IMPORTANT: Replace with your paper's title -->
+                        The Title of Your First Amazing Publication
+                    </h4>
+                    <p class="text-gray-500 mt-1 mb-3">
+                        <!-- IMPORTANT: List authors, with your name bolded -->
+                        Author A, <strong class="text-gray-700">Your Name</strong>, and Author C. (2024).
+                        <br>
+                        <!-- IMPORTANT: Add the journal or conference name -->
+                        <em>Journal of Important Research</em>, 15(2), 123-456.
+                    </p>
+                    <!-- Links for the paper -->
+                    <div class="flex flex-wrap gap-3 items-center">
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[PDF]</a>
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[Code]</a>
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[Data]</a>
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[Slides]</a>
+                        <button onclick="toggleAbstract(this)" class="btn text-sm text-indigo-600 hover:underline">[Show Abstract]</button>
+                    </div>
+                    <!-- Abstract (hidden by default) -->
+                    <div class="abstract text-gray-600 leading-relaxed">
+                        <!-- IMPORTANT: Paste your abstract here -->
+                        This is where the abstract for your paper goes. It provides a concise summary of the research, including its purpose, methods, results, and conclusions. Keep it informative but brief.
+                    </div>
+                </div>
+
+                <!-- Publication Item 2 (Example) -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-gray-900">Another Groundbreaking Study</h4>
+                    <p class="text-gray-500 mt-1 mb-3">
+                        Author D, Author E, and <strong class="text-gray-700">Your Name</strong>. (2023). <br>
+                        <em>Proceedings of the Premier Conference in Your Field</em>.
+                    </p>
+                    <div class="flex flex-wrap gap-3 items-center">
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[PDF]</a>
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[Code]</a>
+                        <button onclick="toggleAbstract(this)" class="btn text-sm text-indigo-600 hover:underline">[Show Abstract]</button>
+                    </div>
+                    <div class="abstract text-gray-600 leading-relaxed">
+                        The abstract for your second paper. This structure allows visitors to quickly scan your work and dive deeper into the papers that interest them most, which is highly effective for hiring committees.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection: Working Papers -->
+            <h3 class="text-2xl font-semibold text-gray-800 mt-12 mb-6">Working Papers</h3>
+            <div class="space-y-8">
+                <!-- Working Paper Item 1 -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-gray-900">Title of a Promising Work in Progress</h4>
+                    <p class="text-gray-500 mt-1 mb-3">
+                        <strong class="text-gray-700">Your Name</strong> and Co-author F.
+                        <br>
+                        <span class="text-sm italic">(Revise & Resubmit at [Top Journal Name])</span>
+                    </p>
+                    <div class="flex flex-wrap gap-3 items-center">
+                        <a href="#" class="btn bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full hover:bg-gray-200">[Latest Draft]</a>
+                        <button onclick="toggleAbstract(this)" class="btn text-sm text-indigo-600 hover:underline">[Show Abstract]</button>
+                    </div>
+                    <div class="abstract text-gray-600 leading-relaxed">
+                        Abstract for your working paper. Highlighting papers under review is a great way to show your active research pipeline.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Teaching -->
+        <section id="teaching" class="mb-24 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-8">Teaching</h2>
+
+            <!-- Teaching Philosophy -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Teaching Philosophy</h3>
+                <p class="text-gray-600 leading-relaxed bg-white p-6 rounded-lg shadow-md">
+                    <!-- IMPORTANT: Write 1-2 paragraphs about your approach to teaching. -->
+                    Here, you can describe your teaching philosophy. Mention your goals for student learning, the methods you use in the classroom (e.g., discussion, project-based learning, active learning), and how you create an inclusive and engaging learning environment. This is a key part of the academic portfolio.
+                </p>
+            </div>
+
+            <!-- Courses Taught -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Teaching Experience</h3>
+                <div class="space-y-6">
+                    <!-- Course 1 -->
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">COURSE 101: Introduction to [Your Field]</h4>
+                        <p class="text-gray-500 mt-1">Instructor of Record, [University Name] (Fall 2023)</p>
+                        <p class="text-gray-600 mt-3">
+                            A brief description of the course. What were the main topics covered? What were the learning objectives for the students?
+                        </p>
+                        <a href="#" class="text-indigo-600 hover:underline mt-3 inline-block">[Syllabus]</a>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">COURSE 201: Advanced Topics in [Your Subfield]</h4>
+                        <p class="text-gray-500 mt-1">Teaching Assistant, [University Name] (Spring 2022)</p>
+                        <p class="text-gray-600 mt-3">
+                            Description of your role and the course content. As a TA, you might mention leading discussion sections, holding office hours, or grading.
+                        </p>
+                        <a href="#" class="text-indigo-600 hover:underline mt-3 inline-block">[Syllabus]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-8">Contact</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <p class="text-lg text-gray-600 mb-4">
+                    Please feel free to reach out via email. I am always open to discussing research or potential collaborations.
+                </p>
+                <a href="mailto:your.email@university.edu" class="text-2xl font-medium text-indigo-600 hover:text-indigo-800 hover:underline">
+                    <!-- IMPORTANT: Replace with your email address -->
+                    your.email@university.edu
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2024 Your Name. All rights reserved.</p>
+                <!-- Footer Social/Academic Links -->
+                <div class="flex items-center gap-6">
+                    <!-- IMPORTANT: Replace '#' with links to your profiles -->
+                    <a href="#" target="_blank" class="hover:text-indigo-300">Google Scholar</a>
+                    <a href="#" target="_blank" class="hover:text-indigo-300">GitHub</a>
+                    <a href="#" target="_blank" class="hover:text-indigo-300">LinkedIn</a>
+                    <a href="#" target="_blank" class="hover:text-indigo-300">Twitter/X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript to close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // JavaScript for toggling abstracts
+        function toggleAbstract(button) {
+            const abstractDiv = button.parentElement.nextElementSibling;
+            const isHidden = abstractDiv.style.display === 'none' || abstractDiv.style.display === '';
+
+            if (isHidden) {
+                abstractDiv.style.display = 'block';
+                button.textContent = '[Hide Abstract]';
+            } else {
+                abstractDiv.style.display = 'none';
+                button.textContent = '[Show Abstract]';
+            }
+        }
+    </script>
+</body>
+</html>
