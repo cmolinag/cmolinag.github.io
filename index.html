@@ -114,7 +114,7 @@
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
             
             <!-- LEFT COLUMN: Profile Sidebar (Persistent) -->
-            <div class="w-full lg:w-auto flex-shrink-0">
+            <div id="profile-sidebar" class="w-full lg:w-auto flex-shrink-0">
                 <div class="lg:sticky lg:top-24 flex flex-col items-center lg:items-start text-center lg:text-left">
                     
                     <!-- Profile Photo -->
@@ -279,16 +279,20 @@
 
                 <!-- Page 4: More -->
                 <section id="more" class="page">
-                    <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-8">More About Me</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-indigo-200 pb-2 inline-block">More About Me</h2>
+                        
+                        <!-- Hiking Image - Large and on top -->
+                        <div class="mb-8">
+                            <img src="assets/images/IMG_20190126_173314.jpg" alt="Hiking at Torres del Paine, Chile" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                            <p class="text-gray-500 italic mt-3 text-sm">Torres del Paine, Chile.</p>
+                        </div>
+
+                        <!-- Text Content - Below image, readable width -->
+                        <div class="text-left bg-white p-8 rounded-lg shadow-md border border-gray-100">
                              <p class="text-gray-600 leading-relaxed mb-4">Outside of research and teaching, I have a variety of interests. I grew up playing soccer in Chile and continue to enjoy sports and outdoor activities. Coming from Chile, hiking is a must, and it's something that I enjoy tremendously while doing my PhD as well.</p>
                              <p class="text-gray-600 leading-relaxed mb-4">I'm also passionate about music—listening to new artists, sharing musical tastes, and going to concerts. I also play guitar as a hobby.</p>
                              <p class="text-gray-600 leading-relaxed">At home, I have a black cat named Inosuke.</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-gray-100">
-                            <img src="assets/images/IMG_20190126_173314.jpg" alt="Hiking at Torres del Paine, Chile" class="rounded-lg w-full h-auto object-cover">
-                            <p class="text-center text-gray-500 italic mt-2 text-sm">Torres del Paine, Chile.</p>
                         </div>
                     </div>
                 </section>
@@ -321,6 +325,13 @@
                 if (window.innerWidth < 1024) {
                      targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
+            }
+
+            // Logic to toggle sidebar visibility based on page
+            if (pageId === 'more') {
+                profileSidebar.classList.add('hidden');
+            } else {
+                profileSidebar.classList.remove('hidden');
             }
 
             // Update active state for desktop nav links
