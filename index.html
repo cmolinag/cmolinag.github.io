@@ -114,6 +114,7 @@
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
             
             <!-- LEFT COLUMN: Profile Sidebar (Persistent) -->
+            <!-- Ensure ID matches script exactly -->
             <div id="profile-sidebar" class="w-full lg:w-auto flex-shrink-0">
                 <div class="lg:sticky lg:top-24 flex flex-col items-center lg:items-start text-center lg:text-left">
                     
@@ -130,7 +131,7 @@
                     <p class="text-lg text-indigo-600 font-medium mb-1">Ph.D. Candidate in Economics</p>
                     <p class="text-gray-600 mb-6">University of Illinois at Urbana-Champaign</p>
 
-                    <!-- Contact Info / Social Links List (Moved from Footer) -->
+                    <!-- Contact Info / Social Links List -->
                     <div class="w-full space-y-3 border-t border-gray-200 pt-6">
                         
                         <!-- Location -->
@@ -148,14 +149,27 @@
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/cristhian-molina-227247207/" target="_blank" class="flex items-center justify-center lg:justify-start text-gray-600 hover:text-indigo-600 transition-colors group">
                             <div class="w-8 flex justify-center"><i class="fab fa-linkedin text-gray-400 group-hover:text-indigo-500 transition-colors"></i></div>
-                            <span class="ml-2 text-sm">LinkedIn</span>
+                            <span class="ml-2 text-sm">LinkedIn Profile</span>
                         </a>
 
                         <!-- GitHub -->
                         <a href="https://github.com/cmolinag" target="_blank" class="flex items-center justify-center lg:justify-start text-gray-600 hover:text-indigo-600 transition-colors group">
                             <div class="w-8 flex justify-center"><i class="fab fa-github text-gray-400 group-hover:text-indigo-500 transition-colors"></i></div>
-                            <span class="ml-2 text-sm">GitHub</span>
+                            <span class="ml-2 text-sm">GitHub Profile</span>
                         </a>
+
+                        <!-- Google Scholar -->
+                        <a href="#" target="_blank" class="flex items-center justify-center lg:justify-start text-gray-600 hover:text-indigo-600 transition-colors group">
+                            <div class="w-8 flex justify-center"><i class="fas fa-graduation-cap text-gray-400 group-hover:text-indigo-500 transition-colors"></i></div>
+                            <span class="ml-2 text-sm">Google Scholar</span>
+                        </a>
+
+                         <!-- Download CV Button -->
+                        <div class="pt-4 w-full">
+                            <a href="assets/pdf/MolinaCristhian_CurriculumVitae_Academic.pdf" target="_blank" class="flex items-center justify-center w-full py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all shadow-md">
+                                <i class="fas fa-file-pdf mr-2"></i> Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,9 +184,6 @@
                         <p class="mb-4">
                             I am an applied microeconomist and PhD candidate at the University of Illinois (graduating May 2026). My work focuses on labor economics, the economics of education, and industrial organization. I use causal inference and advanced data tools to analyze strategic behavior and market responses to regulation.
                         </p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                    <a href="assets/pdf/MolinaCristhian_CurriculumVitae_Academic.pdf" target="_blank" class="btn bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 shadow-sm">Download CV</a>
                     </div>
                 </section>
 
@@ -277,7 +288,7 @@
                     </div>
                 </section>
 
-                <!-- Page 4: More -->
+                <!-- Page 4: More (Re-styled for full width) -->
                 <section id="more" class="page">
                     <div class="max-w-3xl mx-auto text-center">
                         <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-indigo-200 pb-2 inline-block">More About Me</h2>
@@ -395,3 +406,4 @@
     </script>
 </body>
 </html>
+```eof
