@@ -328,16 +328,22 @@
             }
 
             // Logic to toggle sidebar visibility based on page
-            if (pageId === 'more') {
-                profileSidebar.classList.add('hidden');
-            } else {
-                profileSidebar.classList.remove('hidden');
+            // FIX: Define profileSidebar here to prevent ReferenceError
+            const profileSidebar = document.getElementById('profile-sidebar');
+            if (profileSidebar) {
+                if (pageId === 'more') {
+                    profileSidebar.classList.add('hidden');
+                } else {
+                    profileSidebar.classList.remove('hidden');
+                }
             }
 
             // Update active state for desktop nav links
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('onclick') === `showPage('${pageId}')`) {
+                // Robust check: does the onclick attribute contain the pageId?
+                const onclickVal = link.getAttribute('onclick');
+                if (onclickVal && onclickVal.includes(`'${pageId}'`)) {
                     link.classList.add('active');
                 }
             });
